@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>College Survey Form</h2>
+
+    <form action="submit.php" method="post">
+        <label>Full Name</label>
+        <input type="text" name="name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Department</label>
+        <select name="department" required>
+            <option value="">Select</option>
+            <option>Information Technology</option>
+            <option>Computer Engineering</option>
+            <option>Electronics</option>
+            <option>Mechanical</option>
+        </select>
+
+        <label>Year</label>
+        <select name="year" required>
+            <option value="">Select</option>
+            <option>First Year</option>
+            <option>Second Year</option>
+            <option>Third Year</option>
+            <option>Final Year</option>
+        </select>
+
+        <label>Feedback</label>
+        <textarea name="feedback" rows="4" required></textarea>
+
+        <button type="submit">Submit Survey</button>
+    </form>
+</div>
+
+</body>
+</html>
